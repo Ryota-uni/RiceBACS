@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 全体の基本設定（ベースと共通） */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+}
+
+/* ヘッダーとフッターは共通CSSと同様 */
+header {
+    background-color: #f9f9f9;
+    padding: 1.5rem 2rem;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #222;
+}
+nav {
+    margin-top: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+nav ul li a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+nav ul li a:hover {
+    border-color: #999;
+}
+
+footer {
+    background-color: #ddd;
+    color: #555;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
+/* ===== 記事本体 ===== */
+.news-article {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #f9f9f9;
+}
+
+/* 記事ヘッダー */
+.article-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.article-header time {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+.article-header h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem 0;
+    color: #222;
+}
+.article-subtitle {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* 記事本文 */
+.article-content h2 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 2rem;
+    border-left: 4px solid #ccc;
+    padding-left: 0.5rem;
+}
+.article-content p {
+    margin: 1rem 0;
+}
+.article-content ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+    margin: 1rem 0;
+}
+
+/* 単体画像（中央寄せ） */
+.article-main-image,
+.article-end-image {
+    margin: 2rem auto;
+    text-align: center;
+}
+.article-main-image img,
+.article-end-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.article-main-image figcaption,
+.article-end-image figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* 写真ギャラリー */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.photo-gallery img {
+    width: calc(33.333% - 1rem);
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+/* 記事フッター */
+.article-footer {
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.article-footer a.back-to-top {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #444;
+}
+.article-footer a.back-to-top:hover {
+    text-decoration: underline;
+}
+
+/* フッター内の大学ロゴ */
+.footer-logo {
+    margin-top: 0.5rem;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    opacity: 0.9;
+}
